@@ -18,7 +18,7 @@ export default function AboutPage({ navigation }) {
             onPress={() => navigation.navigate("Home")}
           ></Button>
           <Image
-            source={require("../assets/dog.png")}
+            source={require("../assets/Roxy.png")}
             style={{
               borderColor: "#eee",
               borderWidth: 5,
@@ -69,6 +69,14 @@ export default function AboutPage({ navigation }) {
             molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
             nulla pariatur?
           </Text>
+          <Button
+            title="Home Page"
+            onPress={() => navigation.navigate("Home")}
+          ></Button>
+          <Button
+            title="List Page"
+            onPress={() => navigation.navigate("List")}
+          ></Button>
         </View>
       </ScrollView>
     </SafeAreaView>

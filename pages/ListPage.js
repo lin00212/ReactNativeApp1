@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Text,
   View,
+  Pressable,
 } from "react-native";
 
 export default function ListPage({ navigation }) {
@@ -27,6 +28,16 @@ export default function ListPage({ navigation }) {
         )}
         keyExtractor={(item) => item.id}
       />
+      <Pressable onPress={() => navigation.navigate("Home")}>
+        <View style={styles.button}>
+          <Text style={styles.buttonText}>Home</Text>
+        </View>
+      </Pressable>
+      <Pressable onPress={() => navigation.navigate("About")}>
+        <View style={styles.button}>
+          <Text style={styles.buttonText}>About</Text>
+        </View>
+      </Pressable>
     </SafeAreaView>
   );
 }
